@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activa tu cuenta {user_name}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .logo {
+            max-width: 300px;
+        }
+        h1 {
+            color: #7c0082;
+            margin-bottom: 24px;
+            font-weight: 600;
+            font-size: 24px;
+        }
+        .activation-code {
+            background-color: #f1f1f1;
+            padding: 16px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            letter-spacing: 8px;
+            border-radius: 8px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #5e00bc;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #4a0096;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://raw.githubusercontent.com/UniconOrg/templates/refs/heads/main/assets/logo.png" alt="Logo de la empresa" class="logo">
+        </div>
+        <h1>Activa tu cuenta</h1>
+        <p>Gracias por registrarte. Para activar tu cuenta, utiliza el siguiente código de activación:</p>
+        <div class="activation-code">{activation_code}</div>
+        <p>O simplemente haz clic en el botón de abajo para activar tu cuenta automáticamente:</p>
+        <p style="text-align: center;">
+            <a href="#" class="button">Activar mi cuenta</a>
+        </p>
+        <p>Si no has solicitado esta activación, por favor ignora este correo.</p>
+        <div class="footer">
+            <p>Saludos,<br>El equipo de soporte</p>
+        </div>
+    </div>
+</body>
+</html>
